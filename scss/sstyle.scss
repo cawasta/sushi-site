@@ -1,22 +1,24 @@
-body {
+/* GENERAL */
+* {
   margin: 0;
   padding: 0;
   font-family: 'Tajawal', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  transform-style: preserve-3d;
 }
 .container {
   width: 95%;
   max-width: 60em;
   margin: 0 auto;
 }
-header::after, section::after, footer::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
+/* HEADER */
 header {
-  background-color: #ceaea3;
+  background-color: #233d61;
   position: relative;
+  transform: translate3d(0, 0, 2px);
 
   .container {
     display: flex;
@@ -33,7 +35,6 @@ header {
   }
 
   nav {
-
     ul {
       list-style: none;
       margin: 0;
@@ -52,6 +53,44 @@ header {
       color: #EDEDED;
       text-decoration: none;
       font-size: 1.6rem;
+    }
+  }
+}
+
+/* INTRO SECTION */
+.intro-section {
+  background-image: url(../img/intro.jpg);
+  height: 50em;
+  position: relative;
+
+  .intro-text-box {
+    background: center rgba(#233d61, .70);
+    background-attachment: scroll;
+    width: 30em;
+    padding: 3em 4em 3.75em 4em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    h1 {
+      margin: 0;
+      color: #FA7E6F;
+      font-size: 1.8em;
+    }
+
+    p {
+      color: #ededed;
+      margin: 1.5em 0 3em 0;
+      line-height: 1.5;
+      letter-spacing: .125em;
+    }
+
+    a{
+      color: #6CC1C7;
+      text-decoration: none;
+      border: 3px solid #CEAEA3;
+      padding: .7em 1em .5em 1em;
+      letter-spacing: .125em;
     }
   }
 }
