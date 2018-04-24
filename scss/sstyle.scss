@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ------ GENERAL ------ */
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +13,15 @@ body {
   max-width: 60em;
   margin: 0 auto;
 }
+h2 {
+  margin-bottom: .7em;
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: .3em;
+}
+/* ------ END GENERAL SECTION ------ */
 
-/* HEADER */
+/* ------ HEADER ------ */
 header {
   background-color: #233d61;
   position: relative;
@@ -56,8 +63,9 @@ header {
     }
   }
 }
+/* ------ END HEADER SECTION ------ */
 
-/* INTRO SECTION */
+/* ------ INTRO SECTION ------ */
 .intro-section {
   background-image: url(../img/intro.jpg);
   height: 50em;
@@ -94,8 +102,9 @@ header {
     }
   }
 }
+/* ------ END INTRO SECTION ------ */
 
-/* ABOUT SECTION */
+/* ------ ABOUT SECTION ------ */
 .about-section {
   position: relative;
   padding: 8em 0;
@@ -114,6 +123,7 @@ header {
 
       img {
         width: 50%;
+        height: auto;
       }
     }
 
@@ -124,10 +134,7 @@ header {
 
       h2 {
         color: #F0DD78;
-        margin-bottom: .7em;
-        font-weight: normal;
-        font-size: 2rem;
-        letter-spacing: .3em;
+
       }
 
       p{
@@ -151,5 +158,35 @@ header {
     width: 100%;
     position: absolute;
     bottom: 0;
+  }
+}
+/* ------ END ABOUT SECTION ------ */
+
+/* ------ MENU SECTION ------ */
+.menu-section {
+  display: flex;
+  flex-direction: row;
+
+  .menu-text-box {
+    background-color: #6CC1C7;
+    width: 50%;
+    padding: 3em 12em;
+
+    h2 {
+      color: #FA7E6F;
+    }
+
+    p {
+      color: #fff;
+      padding-right: 1.3em;
+      line-height: 1.5;
+      letter-spacing: .1em;
+    }
+  }
+
+  .slider {
+    background-color: #6e8387;
+    width: 50%;
+    height: 17.4em;
   }
 }

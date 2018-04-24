@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ------ GENERAL ------ */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,14 @@ body {
   max-width: 60em;
   margin: 0 auto; }
 
-/* HEADER */
+h2 {
+  margin-bottom: .7em;
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: .3em; }
+
+/* ------ END GENERAL SECTION ------ */
+/* ------ HEADER ------ */
 header {
   background-color: #233d61;
   position: relative;
@@ -42,7 +49,8 @@ header {
     text-decoration: none;
     font-size: 1.6rem; }
 
-/* INTRO SECTION */
+/* ------ END HEADER SECTION ------ */
+/* ------ INTRO SECTION ------ */
 .intro-section {
   background-image: url(../img/intro.jpg);
   height: 50em;
@@ -71,7 +79,8 @@ header {
       padding: .7em 1em .5em 1em;
       letter-spacing: .125em; }
 
-/* ABOUT SECTION */
+/* ------ END INTRO SECTION ------ */
+/* ------ ABOUT SECTION ------ */
 .about-section {
   position: relative;
   padding: 8em 0; }
@@ -86,17 +95,14 @@ header {
       flex-wrap: wrap;
       width: 50%; }
       .about-section .about-box .img-box img {
-        width: 50%; }
+        width: 50%;
+        height: auto; }
     .about-section .about-box .about-text-box {
       width: 50%;
       background-color: #FA7E6F;
       padding: 3em 4em; }
       .about-section .about-box .about-text-box h2 {
-        color: #F0DD78;
-        margin-bottom: .7em;
-        font-weight: normal;
-        font-size: 2rem;
-        letter-spacing: .3em; }
+        color: #F0DD78; }
       .about-section .about-box .about-text-box p {
         color: #FFFFFF;
         line-height: 1.5;
@@ -113,5 +119,26 @@ header {
     width: 100%;
     position: absolute;
     bottom: 0; }
+
+/* ------ END ABOUT SECTION ------ */
+/* ------ MENU SECTION ------ */
+.menu-section {
+  display: flex;
+  flex-direction: row; }
+  .menu-section .menu-text-box {
+    background-color: #6CC1C7;
+    width: 50%;
+    padding: 3em 12em; }
+    .menu-section .menu-text-box h2 {
+      color: #FA7E6F; }
+    .menu-section .menu-text-box p {
+      color: #fff;
+      padding-right: 1.3em;
+      line-height: 1.5;
+      letter-spacing: .1em; }
+  .menu-section .slider {
+    background-color: #6e8387;
+    width: 50%;
+    height: 17.4em; }
 
 /*# sourceMappingURL=sstyle.css.map */
