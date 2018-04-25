@@ -1,9 +1,11 @@
-/* ------ GENERAL ------ */
+/* ------ START GENERAL ------ */
 * {
   margin: 0;
   padding: 0;
   font-family: 'Tajawal', sans-serif;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
 
 body {
   transform-style: preserve-3d; }
@@ -20,7 +22,7 @@ h2 {
   letter-spacing: .3em; }
 
 /* ------ END GENERAL SECTION ------ */
-/* ------ HEADER ------ */
+/* ------ START HEADER ------ */
 header {
   background-color: #233d61;
   position: relative;
@@ -36,7 +38,6 @@ header {
     left: 22em;
     top: .4em; }
   header nav ul {
-    list-style: none;
     margin: 0;
     padding: 0; }
   header nav li {
@@ -46,11 +47,10 @@ header {
     padding: 1.3em 0 1em 0; }
   header nav a {
     color: #EDEDED;
-    text-decoration: none;
     font-size: 1.6rem; }
 
 /* ------ END HEADER SECTION ------ */
-/* ------ INTRO SECTION ------ */
+/* ------ START INTRO SECTION ------ */
 .intro-section {
   background-image: url(../img/intro.jpg);
   height: 50em;
@@ -80,7 +80,7 @@ header {
       letter-spacing: .125em; }
 
 /* ------ END INTRO SECTION ------ */
-/* ------ ABOUT SECTION ------ */
+/* ------ START ABOUT SECTION ------ */
 .about-section {
   position: relative;
   padding: 8em 0; }
@@ -121,7 +121,7 @@ header {
     bottom: 0; }
 
 /* ------ END ABOUT SECTION ------ */
-/* ------ MENU SECTION ------ */
+/* ------ START MENU SECTION ------ */
 .menu-section {
   display: flex;
   flex-direction: row; }
@@ -140,5 +140,42 @@ header {
     background-color: #6e8387;
     width: 50%;
     height: 17.4em; }
+
+/* ------ START MENU SECTION ------ */
+.order-section {
+  color: #7A7878;
+  letter-spacing: .1em;
+  position: relative; }
+  .order-section .order-text-box {
+    border: 1px solid #7A7878;
+    padding: 4em 10em;
+    margin: 10em auto;
+    text-align: center;
+    width: 50em;
+    transform: translate3d(0, 0, 1px); }
+    .order-section .order-text-box h2 {
+      margin: 0; }
+    .order-section .order-text-box p {
+      margin: 3em 0 4em 0; }
+    .order-section .order-text-box a {
+      border: 1px solid #7A7878;
+      color: #7A7878;
+      padding: .6em 1.4em; }
+  .order-section .light-blue-bg {
+    background-color: #C6DBFA;
+    width: 35em;
+    height: 35em;
+    position: absolute;
+    right: 12em;
+    top: -4.5em; }
+  .order-section .beige-bg {
+    background-color: #CEAEA3;
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    left: 27.5em;
+    top: 2.5em; }
+
+/* ------ END MENU SECTION ------ */
 
 /*# sourceMappingURL=sstyle.css.map */
