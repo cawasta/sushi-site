@@ -177,5 +177,20 @@ header {
     top: 2.5em; }
 
 /* ------ END MENU SECTION ------ */
+/* ------ START FOOTER ------ */
+footer {
+  background-color: #CEAEA3;
+  color: #fff;
+  padding: 8em 0; }
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  footer .footer-box p {
+    padding-bottom: 3em; }
+  footer .footer-box p:last-child {
+    padding-bottom: 0; }
+
+/* ------ END FOOTER ------ */
 
 /*# sourceMappingURL=sstyle.css.map */
