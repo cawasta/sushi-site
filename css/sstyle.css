@@ -131,23 +131,51 @@ header {
 /* ------ START MENU SECTION ------ */
 .menu-section {
   display: flex;
-  flex-direction: row; }
-  .menu-section .menu-text-box {
-    background-color: #6CC1C7;
-    width: 50%;
-    padding: 3em 12em; }
-    .menu-section .menu-text-box h2 {
-      color: #FA7E6F; }
-    .menu-section .menu-text-box p {
-      color: #fff;
-      padding-right: 1.3em;
-      line-height: 1.5;
-      letter-spacing: .1em; }
-  .menu-section .slider {
-    background-color: #6e8387;
-    width: 50%;
-    height: 17.4em; }
+  flex-direction: row;
+  width: 100%;
+  height: 20em; }
 
+.menu-text-box {
+  background-color: #6CC1C7;
+  width: 50%;
+  padding: 3em 12em; }
+
+h2 {
+  color: #FA7E6F; }
+
+p {
+  color: #fff;
+  padding-right: 1.3em;
+  line-height: 1.5;
+  letter-spacing: .1em; }
+
+.mainbox {
+  width: 50%;
+  overflow: hidden; }
+
+.imgbox {
+  width: 300%;
+  position: relative;
+  left: 0;
+  animation: slide 30s infinite; }
+
+.imgbox img {
+  width: 33.33%;
+  float: left;
+  object-fit: cover;
+  object-position: 0 -7em; }
+
+@keyframes slide {
+  0% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  75% {
+    left: -100%; }
+  0% {
+    left: 0; } }
 /* ------ END MENU SECTION ------ */
 /* ------ START ORDER SECTION ------ */
 .order-section {
@@ -203,5 +231,7 @@ footer {
     padding-bottom: 0; }
 
 /* ------ END FOOTER ------ */
+/* ------ START SLIDER ------ */
+/* ------ END SLIDER ------ */
 
 /*# sourceMappingURL=sstyle.css.map */
