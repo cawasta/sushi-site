@@ -57,6 +57,7 @@ header {
 /* ------ START INTRO SECTION ------ */
 .intro-section {
   background-image: url(../img/intro.jpg);
+  background-size: cover;
   height: 50em;
   position: relative; }
   .intro-section .intro-text-box {
@@ -226,5 +227,97 @@ footer {
     padding-bottom: 0; }
 
 /* ------ END FOOTER ------ */
+/* ------ START RESPONSIVE DESIGN ------ */
+@media (max-width: 1300px) {
+  header .logo {
+    left: 0;
+    margin-left: 2em; }
+
+  .menu-section .menu-text-box {
+    padding: 3em 5em; }
+  .menu-section .imgbox img {
+    object-position: 0 0 !important; } }
+@media (max-width: 965px) {
+  .intro-section {
+    height: 35em; }
+    .intro-section .intro-text-box {
+      margin-left: 5em; }
+
+  .about-section .about-box {
+    display: block !important;
+    height: 100%; }
+    .about-section .about-box .img-box {
+      display: none !important; }
+    .about-section .about-box .about-text-box {
+      width: 100% !important; }
+
+  .menu-section {
+    display: block;
+    margin-bottom: 26em; }
+    .menu-section .menu-text-box {
+      width: 100%; }
+    .menu-section .mainbox {
+      width: 100%;
+      height: 20em; }
+      .menu-section .mainbox .imgbox img {
+        object-position: 0 -10em !important; }
+
+  .order-text-box {
+    width: 40em !important;
+    padding: 4em 5em !important; } }
+@media (max-width: 690px) {
+  .intro-text-box {
+    width: 90% !important;
+    margin: 0 !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important; }
+
+  .menu-section {
+    margin-bottom: 20em; }
+
+  .menu-section .mainbox {
+    height: 15em; }
+
+  .menu-section .mainbox .imgbox img {
+    object-position: 0 -3em !important; }
+
+  .order-text-box {
+    width: 95% !important;
+    padding: 4em 2em !important;
+    margin: 3em auto !important; }
+
+  .order-section .beige-bg, .order-section .light-blue-bg {
+    display: none; }
+
+  footer {
+    padding: 3em 0; }
+    footer .container {
+      display: block; }
+    footer .footer-box {
+      margin-bottom: 2em; }
+      footer .footer-box p {
+        text-align: center;
+        padding-bottom: 1em; } }
+@media (max-width: 380px) {
+  .intro-section {
+    height: 30em; }
+    .intro-section .intro-text-box {
+      width: 100% !important;
+      padding: 3em 2em 3.75em 2em;
+      text-align: center; }
+      .intro-section .intro-text-box a {
+        padding: .2em .5em; }
+
+  .about-section .about-box {
+    width: 100%; }
+    .about-section .about-box .about-text-box {
+      text-align: center;
+      padding: 3em 2em; }
+
+  .menu-section .menu-text-box {
+    text-align: center;
+    padding: 3em; } }
+/* ------ END RESPONSIVE DESIGN ------ */
 
 /*# sourceMappingURL=sstyle.css.map */
