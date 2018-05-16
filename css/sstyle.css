@@ -227,6 +227,9 @@ footer {
     padding-bottom: 0; }
 
 /* ------ END FOOTER ------ */
+header nav .burger-menu, header nav #toggle {
+  display: none; }
+
 /* ------ START RESPONSIVE DESIGN ------ */
 @media (max-width: 1300px) {
   header .logo {
@@ -241,7 +244,10 @@ footer {
   .intro-section {
     height: 35em; }
     .intro-section .intro-text-box {
-      margin-left: 5em; }
+      margin-left: 5em;
+      text-align: center; }
+      .intro-section .intro-text-box p {
+        text-align: left; }
 
   .about-section .about-box {
     display: block !important;
@@ -253,9 +259,11 @@ footer {
 
   .menu-section {
     display: block;
-    margin-bottom: 26em; }
+    margin-bottom: 26em;
+    text-align: center; }
     .menu-section .menu-text-box {
-      width: 100%; }
+      width: 100%;
+      padding: 3em; }
     .menu-section .mainbox {
       width: 100%;
       height: 20em; }
@@ -266,6 +274,27 @@ footer {
     width: 40em !important;
     padding: 4em 5em !important; } }
 @media (max-width: 690px) {
+  /*    BURGER-MENU
+  https://codepen.io/erikterwan/pen/EVzeRP
+  https://codemyui.com/tag/hamburger-menu/
+  */
+  nav {
+    text-align: right; }
+    nav .burger-menu {
+      text-align: center;
+      color: #EDEDED;
+      font-size: 2.2rem;
+      cursor: pointer;
+      display: block !important; }
+    nav .menu {
+      text-align: center;
+      width: 100%;
+      display: none; }
+      nav .menu li {
+        display: block; }
+    nav #toggle:checked + .menu {
+      display: block; }
+
   .intro-text-box {
     width: 90% !important;
     margin: 0 !important;

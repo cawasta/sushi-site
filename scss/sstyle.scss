@@ -301,6 +301,14 @@ footer {
 }
 /* ------ END FOOTER ------ */
 
+header {
+  nav {
+    .burger-menu, #toggle {
+      display: none;
+    }
+  }
+}
+
 /* ------ START RESPONSIVE DESIGN ------ */
 @media (max-width: 1300px) {
   header {
@@ -328,6 +336,11 @@ footer {
 
     .intro-text-box {
       margin-left: 5em;
+      text-align: center;
+
+      p {
+        text-align: left;
+      }
     }
   }
 
@@ -349,9 +362,11 @@ footer {
   .menu-section {
     display: block;
     margin-bottom: 26em;
+    text-align: center;
 
     .menu-text-box {
       width: 100%;
+      padding: 3em;
     }
 
     .mainbox {
@@ -373,6 +388,38 @@ footer {
 }
 
 @media (max-width: 690px) {
+
+/*    BURGER-MENU
+https://codepen.io/erikterwan/pen/EVzeRP
+https://codemyui.com/tag/hamburger-menu/
+*/
+nav{
+  text-align: right;
+
+  .burger-menu {
+    text-align: center;
+    color: #EDEDED;
+    font-size: 2.2rem;
+    cursor: pointer;
+    display: block !important;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+
+    li {
+      display: block;
+    }
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+}
+
+
   .intro-text-box {
       width: 90% !important;
       margin: 0 !important;
@@ -453,5 +500,4 @@ footer {
     }
   }
 }
-
 /* ------ END RESPONSIVE DESIGN ------ */
